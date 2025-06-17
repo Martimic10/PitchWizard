@@ -8,19 +8,21 @@
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="logo">PitchWizard</div>
+  <nav class="navbar">
+  <div class="logo">PitchWizard</div>
 
-    <button class="hamburger" id="hamburger">
-      ☰
-    </button>
-    <nav>
-      <a href="generate.html">Generator</a>
-      <a href="#features">Features</a>
-      <a href="#pricing">Pricing</a>
-      <a class="cta" href="generate.html">Get Started</a>
-    </nav>
-  </header>
+  <!-- Hamburger (mobile only) -->
+  <button class="hamburger" id="hamburger">☰</button>
+
+  <!-- Links wrapped in UL for toggling -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#generator">Generator</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#cta" class="cta">Get Started</a></li>
+  </ul>
+</nav>
+</header>
 
   <section class="hero">
     <span class="badge">⚡ AI-Powered Proposal Assistant</span>

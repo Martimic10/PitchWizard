@@ -41,8 +41,7 @@ body {
 
 .nav-links {
   display: flex;
-  list-style: none;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .hamburger {
@@ -531,23 +530,23 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 65px;
+    top: 60px;
     right: 20px;
     background: white;
     padding: 1rem;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
     display: flex;
-  }
-
-  .hamburger {
-    display: block;
   }
 }
