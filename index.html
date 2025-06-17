@@ -10,6 +10,10 @@
 
   <header class="navbar">
     <div class="logo">PitchWizard</div>
+
+    <button class="hamburger" id="hamburger">
+      ☰
+    </button>
     <nav>
       <a href="generate.html">Generator</a>
       <a href="#features">Features</a>
@@ -119,5 +123,14 @@
   </div>
   <p class="footer-note">© 2024 PitchWizard. All rights reserved. · Made with ❤️ for freelancers</p>
 </footer>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>

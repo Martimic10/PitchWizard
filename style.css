@@ -39,6 +39,20 @@ body {
   border-radius: 8px;
 }
 
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
   text-align: center;
@@ -514,4 +528,26 @@ textarea {
 
 .copy-btn:hover {
   background-color: #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
