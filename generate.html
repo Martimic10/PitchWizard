@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generate | PitchWizard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="generate-header">
+    <div class="container">
+      <span class="logo">PitchWizard</span>
+      <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+  </header>
+
+  <main class="generate-main">
+    <div class="container">
+      <h1>Generate Your Proposal</h1>
+      <p class="subtitle">Transform any job description into a winning proposal in seconds</p>
+      <p class="generation-count" id="generationCountText">3 free generations remaining</p>
+
+      <div class="generate-grid">
+    
+        <div class="card">
+          <h2>Job Details</h2>
+          <p>Paste the job description and customize your approach</p>
+
+          <label for="job">Job Description *</label>
+          <textarea id="job" placeholder="Paste the complete job description here..."></textarea>
+
+          <label for="tone">Proposal Tone *</label>
+          <select id="tone">
+            <option value="">Choose your tone...</option>
+            <option value="Confident">Confident</option>
+            <option value="Friendly">Friendly</option>
+            <option value="Professional">Professional</option>
+            <option value="Persuasive">Persuasive</option>
+          </select>
+
+          <button class="generate-btn" id="generate-btn">Generate My Proposal</button>
+        </div>
+
+        <div class="card">
+          <h2>Your AI-Generated Proposal</h2>
+          <p class="sub">Ready to send to your potential client</p>
+
+          <div id="output-section" style="display: none;">
+            <div class="proposal-output">
+              <p id="proposal-text">Your AI-generated proposal will appear here.</p>
+            </div>
+
+            <button class="copy-btn" id="copy-btn">Copy</button>
+            <button class="copy-btn" id="reset-btn">Reset</button>
+          </div>
+
+          <div id="upgrade-section" style="display: none; margin-top: 10px;">
+            <p>You've reached your 3 free generations for today. <a href="#pricing">Upgrade for unlimited access →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
